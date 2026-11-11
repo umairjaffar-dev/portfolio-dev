@@ -14,7 +14,7 @@ export function ButtonLink({ variant = "primary", className, ...props }: ButtonL
     <Link
       className={cn(
         "inline-flex h-10 items-center justify-center gap-2 rounded-lg px-4 text-sm font-medium transition",
-        "focus-visible:outline-accent focus-visible:outline-2 focus-visible:outline-offset-2",
+        "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
         variants[variant],
         className,
       )}

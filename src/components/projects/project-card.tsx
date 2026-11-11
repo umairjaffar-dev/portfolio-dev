@@ -15,7 +15,7 @@ export function ProjectCard({
 }) {
   const cover = project.screenshots[0];
   return (
-    <article className="group border-border bg-surface hover:border-accent/40 flex h-full flex-col rounded-xl border p-4 transition">
+    <article className="group flex h-full flex-col rounded-xl border border-border bg-surface p-4 transition hover:border-accent/40">
       <CameraFrame
         label={`cam_${String(index + 1).padStart(2, "0")} · ${project.slug}`}
         className="aspect-video"
@@ -49,15 +49,15 @@ export function ProjectCard({
         </div>
 
         <h3 className="mt-4 text-xl font-semibold">{project.title}</h3>
-        <p className="text-muted mt-1">{project.tagline}</p>
+        <p className="mt-1 text-muted">{project.tagline}</p>
 
-        <ul className="text-muted marker:text-live mt-4 list-disc space-y-1 pl-5 text-sm">
+        <ul className="mt-4 list-disc space-y-1 pl-5 text-sm text-muted marker:text-live">
           {project.achievements.slice(0, 3).map((a) => (
             <li key={a}>{a}</li>
           ))}
         </ul>
 
-        <p className="text-muted mt-4 font-mono text-xs">
+        <p className="mt-4 font-mono text-xs text-muted">
           {project.techStack
             .slice(0, 5)
             .map((t) => t.name)
@@ -68,7 +68,7 @@ export function ProjectCard({
           <button
             type="button"
             onClick={onPreview}
-            className="bg-accent text-accent-fg focus-visible:outline-accent inline-flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-medium transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="inline-flex h-10 items-center gap-2 rounded-lg bg-accent px-4 text-sm font-medium text-accent-fg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             <Eye className="size-4" aria-hidden="true" />
             Preview

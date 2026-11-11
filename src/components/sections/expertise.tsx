@@ -18,12 +18,12 @@ export function Expertise() {
           const Icon = icons[item.icon];
           return (
             <Reveal key={item.title} delay={i * 0.05}>
-              <article className="border-border bg-surface hover:border-accent/40 h-full rounded-xl border p-6 transition">
-                <div className="bg-accent/10 text-accent flex size-10 items-center justify-center rounded-lg">
+              <article className="h-full rounded-xl border border-border bg-surface p-6 transition hover:border-accent/40">
+                <div className="flex size-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
                   <Icon className="size-5" aria-hidden="true" />
                 </div>
                 <h3 className="mt-5 text-lg font-semibold">{item.title}</h3>
-                <p className="text-muted mt-2">{item.description}</p>
+                <p className="mt-2 text-muted">{item.description}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {item.tags.map((t) => (
                     <Badge key={t}>{t}</Badge>

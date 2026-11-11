@@ -5,7 +5,7 @@ export function SectionHeading({ id, title }: { id: SectionId; title: string }) 
   const { index, label } = getSection(id);
   return (
     <header className="mb-10">
-      <p className="text-accent font-mono text-sm">
+      <p className="font-mono text-sm text-accent">
         {"// "}
         {index} · {label.toLowerCase()}
       </p>
