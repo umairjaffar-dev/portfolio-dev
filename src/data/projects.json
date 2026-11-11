@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "formedia",
+    "title": "forMedia",
+    "tagline": "AI-driven broadcast media monitoring platform",
+    "category": ["Full-Stack", "Video Streaming", "AI"],
+    "featured": true,
+    "confidential": true,
+    "period": "TODO",
+    "scope": "TODO: problem, users, and scale of the platform.",
+    "role": "TODO: your exact role and ownership.",
+    "achievements": ["TODO: measurable achievement"],
+    "techStack": [
+      { "name": "React", "group": "Frontend", "why": "TODO" },
+      { "name": "HLS.js", "group": "Video", "why": "Adaptive live stream playback in the browser" }
+    ],
+    "screenshots": [],
+    "liveUrl": null,
+    "repoUrl": null
+  },
+  {
+    "slug": "nexus-dashboard",
+    "title": "Nexus Dashboard",
+    "tagline": "GovTech factory monitoring for the Federal Board of Revenue",
+    "category": ["Full-Stack", "Data Visualization"],
+    "featured": true,
+    "confidential": true,
+    "period": "TODO",
+    "scope": "TODO: problem, users, and scale of the platform.",
+    "role": "TODO: your exact role and ownership.",
+    "achievements": ["TODO: measurable achievement"],
+    "techStack": [{ "name": "React", "group": "Frontend", "why": "TODO" }],
+    "screenshots": [],
+    "liveUrl": null,
+    "repoUrl": null
+  }
+]
