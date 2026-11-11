@@ -1,29 +1,52 @@
 [
   {
     "company": "Betacodes",
-    "role": "TODO: role title",
+    "role": "Senior Frontend Developer",
     "location": "Islamabad, Pakistan",
-    "start": "TODO",
+    "start": "Dec 2023",
     "end": null,
-    "highlights": ["TODO: key achievement"],
-    "stack": ["React", "TypeScript", "HLS.js"]
+    "highlights": [
+      "Joined as Frontend Developer and promoted to Senior within a year (Dec 2024).",
+      "Lead frontend development for two production platforms: forMedia (AI broadcast monitoring) and BetaNexus (GovTech production monitoring).",
+      "Own frontend architecture, code reviews, and delivery, and mentor junior developers.",
+      "Designed Django REST Framework endpoints for internal tools and led contract-first API design for the BetaNexus network monitoring module."
+    ],
+    "stack": [
+      "React 19",
+      "TypeScript",
+      "HLS.js",
+      "HTML Canvas",
+      "TanStack Query",
+      "Zustand",
+      "Zod",
+      "Tailwind CSS",
+      "ApexCharts",
+      "Django REST Framework"
+    ]
   },
   {
     "company": "PkTeam",
-    "role": "TODO: role title",
-    "location": "TODO",
-    "start": "TODO",
-    "end": "TODO",
-    "highlights": ["TODO: key achievement"],
-    "stack": ["React"]
+    "role": "Frontend Developer",
+    "location": "Rawalpindi, Pakistan",
+    "start": "Oct 2022",
+    "end": "Nov 2023",
+    "highlights": [
+      "Built CICO, a multi-branch QR-code attendance system for Islamabad Diagnostic Centre, on a GraphQL (Apollo Client) data layer.",
+      "Implemented role-based access with protected routes and separate admin and employee dashboards.",
+      "Built a server monitoring dashboard for uptime and downtime status with Redux Toolkit, Material UI, and Recharts.",
+      "Delivered features in an Agile/Scrum team."
+    ],
+    "stack": ["React", "GraphQL", "Apollo Client", "Redux Toolkit", "Material UI", "Recharts"]
   },
   {
     "company": "Software Development Hub",
-    "role": "TODO: role title",
-    "location": "TODO",
-    "start": "TODO",
-    "end": "TODO",
-    "highlights": ["TODO: key achievement"],
-    "stack": ["React"]
+    "role": "Frontend Developer Intern",
+    "location": "Islamabad, Pakistan",
+    "start": "Apr 2022",
+    "end": "Sep 2022",
+    "highlights": [
+      "Built e-commerce and blog websites in React with REST API integration, responsive Bootstrap layouts, and custom form validation."
+    ],
+    "stack": ["React", "REST APIs", "Bootstrap"]
   }
 ]

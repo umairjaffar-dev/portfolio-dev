@@ -2,18 +2,28 @@
   "name": "Umair Jaffar",
   "title": "Full-Stack Developer",
   "tagline": "fullstack · video streaming · ai surveillance",
-  "summary": "I build real-time video, monitoring, and data-heavy web platforms, from the streaming pipeline to the dashboard.",
+  "summary": "I build real-time video and AI-monitoring platforms with React and TypeScript, and extend them across the stack with Node.js and Django REST Framework.",
   "about": [
-    "TODO: 2-3 lines on how you started as a frontend developer and grew into full-stack work.",
-    "TODO: what you focus on now: video streaming, AI-powered monitoring, and where you are heading with AI."
+    "I'm a developer with 4 years of experience building real-time video and data-heavy products. I joined Betacodes as a Frontend Developer and was promoted to Senior within a year.",
+    "Today I lead the frontend for two production platforms: an AI broadcast monitoring system tracking 50+ live TV channels for 80+ analysts, and a GovTech dashboard that overlays AI detections on live camera feeds across 48+ factory sites.",
+    "I'm expanding into full-stack work with Node.js, Express, and Django REST Framework, and going deeper into AI for video and surveillance."
   ],
   "location": "Islamabad, Pakistan",
   "availableForWork": true,
   "resumeUrl": null,
   "stats": [
-    { "value": "TODO", "label": "Years experience" },
-    { "value": "TODO", "label": "Production systems" },
-    { "value": "Govt-scale", "label": "FBR monitoring platform" }
+    { "value": "4+", "label": "Years experience" },
+    { "value": "50+", "label": "Live TV channels monitored" },
+    { "value": "48+", "label": "Factory sites (FBR)" },
+    { "value": "80+", "label": "Analysts on forMedia" }
   ],
-  "socials": [{ "label": "GitHub", "href": "https://github.com/umairjaffar-dev", "icon": "github" }]
+  "socials": [
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/umairjaffar-dev/",
+      "icon": "linkedin"
+    },
+    { "label": "GitHub", "href": "https://github.com/umairjaffar-dev", "icon": "github" },
+    { "label": "Email", "href": "mailto:umairjaffar.dev@gmail.com", "icon": "mail" }
+  ]
 }
