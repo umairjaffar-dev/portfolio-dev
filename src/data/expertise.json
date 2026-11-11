@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Real-time video streaming",
+    "description": "Live and on-demand playback pipelines, from FFmpeg-processed streams to adaptive HLS players in the browser.",
+    "icon": "video",
+    "tags": ["HLS.js", "FFmpeg", "Node.js"]
+  },
+  {
+    "title": "AI surveillance dashboards",
+    "description": "Monitoring interfaces that turn AI detections and multi-channel feeds into views operators can act on.",
+    "icon": "cctv",
+    "tags": ["React", "HTML Canvas", "TanStack Query"]
+  },
+  {
+    "title": "Full-stack web apps",
+    "description": "Typed end-to-end applications with REST and GraphQL APIs, auth, and relational or document databases.",
+    "icon": "layers",
+    "tags": ["Next.js", "Express", "PostgreSQL"]
+  },
+  {
+    "title": "Data visualization",
+    "description": "Dense, readable charts and dashboards for operational and government-scale data.",
+    "icon": "chart",
+    "tags": ["D3.js", "ApexCharts", "Recharts"]
+  }
+]

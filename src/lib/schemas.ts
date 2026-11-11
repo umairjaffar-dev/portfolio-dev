@@ -15,12 +15,23 @@ export const profileSchema = z.object({
   title: nonEmpty,
   tagline: nonEmpty,
   summary: nonEmpty,
+  about: z.array(nonEmpty).min(1),
   location: nonEmpty,
   availableForWork: z.boolean(),
   resumeUrl: z.string().startsWith("/").nullable(),
   stats: z.array(z.object({ value: nonEmpty, label: nonEmpty })).max(4),
   socials: z.array(socialSchema),
 });
+
+/* ---------- expertise.json ---------- */
+export const expertiseSchema = z.array(
+  z.object({
+    title: nonEmpty,
+    description: nonEmpty,
+    icon: z.enum(["video", "cctv", "layers", "chart"]),
+    tags: z.array(nonEmpty).max(4),
+  }),
+);
 
 /* ---------- skills.json ---------- */
 export const skillGroupSchema = z.object({
@@ -90,6 +101,7 @@ export const projectsSchema = z
   });
 
 export type Profile = z.infer<typeof profileSchema>;
+export type ExpertiseItem = z.infer<typeof expertiseSchema>[number];
 export type SkillGroup = z.infer<typeof skillGroupSchema>;
 export type Experience = z.infer<typeof experienceSchema>[number];
 export type Project = z.infer<typeof projectSchema>;
