@@ -72,7 +72,7 @@ export const techItemSchema = z.object({
 });
 
 export const screenshotSchema = z.object({
-  src: z.string().startsWith("/projects/"),
+  src: z.string().startsWith("/images/projects/"),
   alt: nonEmpty,
   caption: z.string().optional(),
 });

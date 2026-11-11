@@ -49,8 +49,9 @@ export function ProjectModal({
                     {project.title}
                   </Dialog.Title>
                   <Dialog.Description className="text-muted mt-1">
-                    {project.tagline} · <span className="font-mono text-xs">{project.period}</span>
+                    {project.tagline}
                   </Dialog.Description>
+                  <p className="text-muted mt-1 font-mono text-xs">{project.period}</p>
                 </div>
                 <Dialog.Close
                   aria-label="Close"

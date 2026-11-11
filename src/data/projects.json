@@ -2,35 +2,254 @@
   {
     "slug": "formedia",
     "title": "forMedia",
-    "tagline": "AI-driven broadcast media monitoring platform",
+    "tagline": "AI broadcast monitoring with real-time transcription and media intelligence",
     "category": ["Full-Stack", "Video Streaming", "AI"],
     "featured": true,
     "confidential": true,
-    "period": "TODO",
-    "scope": "TODO: problem, users, and scale of the platform.",
-    "role": "TODO: your exact role and ownership.",
-    "achievements": ["TODO: measurable achievement"],
-    "techStack": [
-      { "name": "React", "group": "Frontend", "why": "TODO" },
-      { "name": "HLS.js", "group": "Video", "why": "Adaptive live stream playback in the browser" }
+    "period": "Betacodes · Dec 2023 – present",
+    "scope": "A production platform that monitors 50+ live TV channels for 80+ analysts. It combines live and archived video, bilingual transcription, and AI (LLM/OCR) extraction so analysts can find, clip, and share what aired.",
+    "role": "Frontend lead: owned architecture, code reviews, and delivery, mentored junior developers, and designed Django REST Framework endpoints for internal tools.",
+    "achievements": [
+      "Built the live TV module on HLS.js with custom controls, in-browser clipping with metadata tagging, and DVR-style playback across a 180-day archive.",
+      "Architected the real-time data layer with Zustand and TanStack Query to stream LLM outputs and transcription updates while keeping the UI responsive.",
+      "Developed a bilingual English/Urdu transcription interface with Nastaliq rendering, full-text search, and click-to-seek sync with the video timeline.",
+      "Built a Ticker and Flasher dashboard that turns AI-extracted on-air headlines into an analyst workflow for filtering, editing, categorizing, and collage generation.",
+      "Architected a collaborative workspace for sharing AI-generated video highlights across departments, from Figma to responsive, WCAG-compliant interfaces.",
+      "Designed Django REST Framework API endpoints for internal tools, streamlining frontend–backend integration."
     ],
-    "screenshots": [],
+    "techStack": [
+      {
+        "name": "React 19 + TypeScript",
+        "group": "Frontend",
+        "why": "Typed component architecture for a large, multi-module analyst app"
+      },
+      {
+        "name": "HLS.js",
+        "group": "Video",
+        "why": "Live TV playback, custom controls, clipping, and DVR seeking over a 180-day archive"
+      },
+      {
+        "name": "Zustand",
+        "group": "Data",
+        "why": "Lightweight client state for high-frequency transcription and LLM updates"
+      },
+      {
+        "name": "TanStack Query",
+        "group": "Data",
+        "why": "Server-state caching and background refresh for streaming AI results"
+      },
+      {
+        "name": "LLM / OCR outputs",
+        "group": "AI",
+        "why": "Consumed AI-extracted headlines and transcripts and turned them into analyst workflows"
+      },
+      {
+        "name": "Tailwind CSS",
+        "group": "Frontend",
+        "why": "Responsive, WCAG-compliant UI built from Figma, including Urdu Nastaliq typography"
+      },
+      {
+        "name": "Django REST Framework",
+        "group": "Backend",
+        "why": "Designed API endpoints for internal tools"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/images/projects/formedia/01-live-tv.webp",
+        "alt": "forMedia: Live TV module with clipping and DVR playback (placeholder)",
+        "caption": "Live TV module with clipping and DVR playback"
+      },
+      {
+        "src": "/images/projects/formedia/02-transcription.webp",
+        "alt": "forMedia: Bilingual English/Urdu transcription with click-to-seek (placeholder)",
+        "caption": "Bilingual English/Urdu transcription with click-to-seek"
+      },
+      {
+        "src": "/images/projects/formedia/03-ticker-flasher.webp",
+        "alt": "forMedia: Ticker and Flasher dashboard for AI-extracted headlines (placeholder)",
+        "caption": "Ticker and Flasher dashboard for AI-extracted headlines"
+      }
+    ],
     "liveUrl": null,
     "repoUrl": null
   },
   {
-    "slug": "nexus-dashboard",
-    "title": "Nexus Dashboard",
-    "tagline": "GovTech factory monitoring for the Federal Board of Revenue",
-    "category": ["Full-Stack", "Data Visualization"],
+    "slug": "betanexus",
+    "title": "BetaNexus",
+    "tagline": "GovTech production monitoring with AI detections on live factory camera feeds",
+    "category": ["Video Streaming", "AI", "Data Visualization", "Frontend"],
     "featured": true,
     "confidential": true,
-    "period": "TODO",
-    "scope": "TODO: problem, users, and scale of the platform.",
-    "role": "TODO: your exact role and ownership.",
-    "achievements": ["TODO: measurable achievement"],
-    "techStack": [{ "name": "React", "group": "Frontend", "why": "TODO" }],
-    "screenshots": [],
+    "period": "Betacodes · built from inception",
+    "scope": "An industrial production monitoring platform for the Federal Board of Revenue (FBR). It overlays AI detections on live camera feeds and gives auditors production analytics across 48+ factory sites, designed to scale to 400+.",
+    "role": "Frontend lead from inception: architecture, data layer, and video overlay pipeline, plus contract-first API design for the Network Monitoring (NMS) module.",
+    "achievements": [
+      "Built an in-browser MPEG-TS parser (PES reassembly, ID3/TXXX extraction) that reads AI detection metadata from live HLS streams and draws bounding boxes, unit counts, and timestamps on a playback-synced Canvas overlay.",
+      "Built ApexCharts dashboards (heatmaps, line/bar charts, zoom, log scale) for SKU, production, mill-wise output, and downtime analytics across 48+ factory sites.",
+      "Architected a type-safe data layer with TanStack Query (polling, infinite pagination, cache invalidation) and Zod response validation to catch API contract drift early.",
+      "Made URL search params the single source of truth for filters, so every view is shareable, bookmarkable, and refresh-safe.",
+      "Implemented 2FA OTP login, silent token refresh via Axios interceptors, admin user management, and React Leaflet maps for factory search and onboarding.",
+      "Optimized rendering with the React 19 Compiler, memoization, and route-level lazy loading, with strict ESLint (no `any`) and Vitest in GitHub Actions CI.",
+      "Led contract-first API design for the NMS module, defining schemas and TypeScript types before backend implementation."
+    ],
+    "techStack": [
+      {
+        "name": "HLS.js + MPEG-TS parsing",
+        "group": "Video",
+        "why": "Extract ID3 detection metadata from live streams in the browser"
+      },
+      {
+        "name": "HTML Canvas",
+        "group": "Video",
+        "why": "Playback-synced overlay for bounding boxes, unit counts, and timestamps"
+      },
+      {
+        "name": "AI detection metadata",
+        "group": "AI",
+        "why": "Rendered computer-vision detections from live feeds for auditors"
+      },
+      {
+        "name": "ApexCharts",
+        "group": "Data",
+        "why": "Heatmaps and zoomable, log-scale production and downtime charts"
+      },
+      {
+        "name": "TanStack Query + Zod",
+        "group": "Data",
+        "why": "Polling, infinite pagination, and runtime validation of API responses"
+      },
+      {
+        "name": "Axios",
+        "group": "Backend",
+        "why": "Interceptors for silent token refresh in the 2FA auth flow"
+      },
+      {
+        "name": "React 19 Compiler",
+        "group": "Frontend",
+        "why": "Automatic memoization for dashboards with heavy re-render pressure"
+      },
+      {
+        "name": "React Leaflet",
+        "group": "Frontend",
+        "why": "Maps for factory search and site onboarding"
+      },
+      {
+        "name": "Vitest + GitHub Actions",
+        "group": "Testing",
+        "why": "Unit tests and strict lint gates on every push"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/images/projects/betanexus/01-detection-overlay.webp",
+        "alt": "BetaNexus: AI detection overlay on a live HLS feed (placeholder)",
+        "caption": "AI detection overlay on a live HLS feed"
+      },
+      {
+        "src": "/images/projects/betanexus/02-production-analytics.webp",
+        "alt": "BetaNexus: Production and downtime analytics (placeholder)",
+        "caption": "Production and downtime analytics"
+      },
+      {
+        "src": "/images/projects/betanexus/03-factory-map.webp",
+        "alt": "BetaNexus: Factory sites map for search and onboarding (placeholder)",
+        "caption": "Factory sites map for search and onboarding"
+      }
+    ],
+    "liveUrl": null,
+    "repoUrl": null
+  },
+  {
+    "slug": "cico",
+    "title": "CICO",
+    "tagline": "Multi-branch QR-code attendance system for Islamabad Diagnostic Centre",
+    "category": ["Frontend"],
+    "featured": false,
+    "confidential": true,
+    "period": "PkTeam · Oct 2022 – Nov 2023",
+    "scope": "An employee attendance system used across multiple branches of Islamabad Diagnostic Centre, with QR-code check-in and check-out and exportable reports.",
+    "role": "Frontend developer in an Agile/Scrum team.",
+    "achievements": [
+      "Built QR-code check-in/check-out on a GraphQL (Apollo Client) data layer.",
+      "Implemented role-based access with protected routes and separate admin and employee dashboards.",
+      "Added PDF report export for attendance records."
+    ],
+    "techStack": [
+      {
+        "name": "React",
+        "group": "Frontend",
+        "why": "Admin and employee dashboards"
+      },
+      {
+        "name": "GraphQL (Apollo Client)",
+        "group": "Data",
+        "why": "Typed queries and caching for attendance data"
+      },
+      {
+        "name": "Protected routes (RBAC)",
+        "group": "Frontend",
+        "why": "Separate admin and employee access"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/images/projects/cico/01-qr-checkin.webp",
+        "alt": "CICO: QR-code check-in across branches (placeholder)",
+        "caption": "QR-code check-in across branches"
+      },
+      {
+        "src": "/images/projects/cico/02-admin-dashboard.webp",
+        "alt": "CICO: Admin dashboard with reports and PDF export (placeholder)",
+        "caption": "Admin dashboard with reports and PDF export"
+      }
+    ],
+    "liveUrl": null,
+    "repoUrl": null
+  },
+  {
+    "slug": "server-monitoring-dashboard",
+    "title": "Server Monitoring Dashboard",
+    "tagline": "Uptime and downtime status dashboard",
+    "category": ["Frontend", "Data Visualization"],
+    "featured": false,
+    "confidential": true,
+    "period": "PkTeam · Oct 2022 – Nov 2023",
+    "scope": "A dashboard that shows server uptime and downtime status at a glance.",
+    "role": "Frontend developer.",
+    "achievements": [
+      "Built status views and uptime charts with Recharts.",
+      "Managed dashboard state with Redux Toolkit and built the UI with Material UI."
+    ],
+    "techStack": [
+      {
+        "name": "Redux Toolkit",
+        "group": "Data",
+        "why": "Centralized state for server status"
+      },
+      {
+        "name": "Material UI",
+        "group": "Frontend",
+        "why": "Consistent dashboard components"
+      },
+      {
+        "name": "Recharts",
+        "group": "Data",
+        "why": "Uptime and downtime charts"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/images/projects/server-monitoring-dashboard/01-status-overview.webp",
+        "alt": "Server Monitoring Dashboard: Server status overview (placeholder)",
+        "caption": "Server status overview"
+      },
+      {
+        "src": "/images/projects/server-monitoring-dashboard/02-uptime-charts.webp",
+        "alt": "Server Monitoring Dashboard: Uptime and downtime charts (placeholder)",
+        "caption": "Uptime and downtime charts"
+      }
+    ],
     "liveUrl": null,
     "repoUrl": null
   }
