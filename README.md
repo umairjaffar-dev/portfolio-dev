@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# portfolio-dev
 
-## Getting Started
+Personal portfolio of Umair Jaffar: Full-Stack Developer, Video Streaming & AI Surveillance.
+Built with Next.js 16 (App Router, Cache Components), React 19, TypeScript, and Tailwind CSS v4.
 
-First, run the development server:
+## Scripts
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+| Command                           | Purpose                                          |
+| --------------------------------- | ------------------------------------------------ |
+| `npm run dev`                     | Local dev server                                 |
+| `npm run build`                   | Production build (fails on invalid content JSON) |
+| `npm run typecheck`               | Generate route types, then `tsc --noEmit`        |
+| `npm run lint` / `npm run format` | ESLint / Prettier                                |
+| `npm run test:run`                | Vitest unit tests                                |
+
+## Structure
+
+```
+src/
+├── app/                 # layout, page, not-found, globals.css (Theme A tokens), fonts/
+├── components/
+│   ├── layout/          # Navbar, Footer
+│   ├── sections/        # Hero, About, Expertise, Skills, Experience, Projects, Contact
+│   └── ui/              # Container, Section, SectionHeading, Badge, ButtonLink, LiveDot, ThemeToggle
+├── data/                # ✏️ All content lives here (profile, skills, experience, projects)
+└── lib/                 # schemas.ts (Zod), data.ts (parsed content), navigation, theme, utils
+public/projects/<slug>/  # Project screenshots (.webp)
+public/resume/           # CV PDF
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Updating content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit the JSON files in `src/data/`. Each file is validated by `src/lib/schemas.ts` at build time,
+so a missing or wrong field stops the build with a clear error instead of shipping a broken page.

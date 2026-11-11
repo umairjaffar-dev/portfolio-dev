@@ -1,0 +1,29 @@
+[
+  {
+    "company": "Betacodes",
+    "role": "TODO: role title",
+    "location": "Islamabad, Pakistan",
+    "start": "TODO",
+    "end": null,
+    "highlights": ["TODO: key achievement"],
+    "stack": ["React", "TypeScript", "HLS.js"]
+  },
+  {
+    "company": "PkTeam",
+    "role": "TODO: role title",
+    "location": "TODO",
+    "start": "TODO",
+    "end": "TODO",
+    "highlights": ["TODO: key achievement"],
+    "stack": ["React"]
+  },
+  {
+    "company": "Software Development Hub",
+    "role": "TODO: role title",
+    "location": "TODO",
+    "start": "TODO",
+    "end": "TODO",
+    "highlights": ["TODO: key achievement"],
+    "stack": ["React"]
+  }
+]
