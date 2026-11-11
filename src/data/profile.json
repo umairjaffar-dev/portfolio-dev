@@ -3,6 +3,10 @@
   "title": "Full-Stack Developer",
   "tagline": "fullstack · video streaming · ai surveillance",
   "summary": "I build real-time video, monitoring, and data-heavy web platforms, from the streaming pipeline to the dashboard.",
+  "about": [
+    "TODO: 2-3 lines on how you started as a frontend developer and grew into full-stack work.",
+    "TODO: what you focus on now: video streaming, AI-powered monitoring, and where you are heading with AI."
+  ],
   "location": "Islamabad, Pakistan",
   "availableForWork": true,
   "resumeUrl": null,

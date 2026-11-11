@@ -1,10 +1,11 @@
+import { ProjectGrid } from "@/components/projects/project-grid";
 import { Section } from "@/components/ui/section";
+import { projects } from "@/lib/data";
 
-/** TODO(step-5): build Projects section UI. */
 export function Projects() {
   return (
     <Section id="projects" title="Selected projects">
-      <p className="text-muted">Coming soon.</p>
+      <ProjectGrid projects={projects} />
     </Section>
   );
 }
