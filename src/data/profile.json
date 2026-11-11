@@ -1,0 +1,15 @@
+{
+  "name": "Umair Jaffar",
+  "title": "Full-Stack Developer",
+  "tagline": "fullstack · video streaming · ai surveillance",
+  "summary": "I build real-time video, monitoring, and data-heavy web platforms, from the streaming pipeline to the dashboard.",
+  "location": "Islamabad, Pakistan",
+  "availableForWork": true,
+  "resumeUrl": null,
+  "stats": [
+    { "value": "TODO", "label": "Years experience" },
+    { "value": "TODO", "label": "Production systems" },
+    { "value": "Govt-scale", "label": "FBR monitoring platform" }
+  ],
+  "socials": [{ "label": "GitHub", "href": "https://github.com/umairjaffar-dev", "icon": "github" }]
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "languages",
+    "label": "Languages",
+    "items": ["TypeScript", "JavaScript (ES6+)", "Python", "HTML5", "CSS3"]
+  },
+  {
+    "id": "frontend",
+    "label": "Frontend",
+    "items": [
+      "React 19 (React Compiler)",
+      "Next.js",
+      "React Router",
+      "Vite",
+      "TanStack Query",
+      "Zustand",
+      "Redux Toolkit",
+      "Zod",
+      "Apollo Client (GraphQL)"
+    ]
+  },
+  {
+    "id": "backend",
+    "label": "Backend",
+    "items": ["Node.js", "Express.js", "Django", "Django REST Framework", "REST APIs", "GraphQL"]
+  },
+  {
+    "id": "video-viz",
+    "label": "Video & Data Visualization",
+    "items": ["HLS.js", "HTML Canvas", "D3.js", "ApexCharts", "Recharts"]
+  },
+  {
+    "id": "data-storage",
+    "label": "Databases & Storage",
+    "items": ["PostgreSQL", "MongoDB", "Cloudinary", "AWS S3"]
+  },
+  {
+    "id": "ui",
+    "label": "UI & Styling",
+    "items": [
+      "Tailwind CSS",
+      "Material UI",
+      "Responsive Design",
+      "WCAG Accessibility",
+      "Urdu/RTL Typography (Nastaliq)",
+      "Figma"
+    ]
+  },
+  {
+    "id": "quality-devops",
+    "label": "Testing, Performance & DevOps",
+    "items": [
+      "Vitest",
+      "React Testing Library",
+      "E2E / UAT",
+      "ESLint",
+      "Code Splitting & Lazy Loading",
+      "Git & GitHub",
+      "GitHub Actions (CI/CD)",
+      "Agile/Scrum"
+    ]
+  }
+]
