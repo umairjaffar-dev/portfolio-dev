@@ -50,6 +50,7 @@
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 
   --animate-live-pulse: live-pulse 2s ease-in-out infinite;
+  --animate-scan: scan 6s linear infinite;
 }
 
 @keyframes live-pulse {
@@ -59,6 +60,16 @@
   }
   50% {
     opacity: 0.35;
+  }
+}
+
+/* Moves in SVG user units (hero banner viewBox height = 478). */
+@keyframes scan {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(478px);
   }
 }
 
