@@ -54,7 +54,23 @@
         "why": "Designed API endpoints for internal tools"
       }
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "/images/projects/formedia/01-live-tv.webp",
+        "alt": "forMedia: Live TV module with clipping and DVR playback (placeholder)",
+        "caption": "Live TV module with clipping and DVR playback"
+      },
+      {
+        "src": "/images/projects/formedia/02-transcription.webp",
+        "alt": "forMedia: Bilingual English/Urdu transcription with click-to-seek (placeholder)",
+        "caption": "Bilingual English/Urdu transcription with click-to-seek"
+      },
+      {
+        "src": "/images/projects/formedia/03-ticker-flasher.webp",
+        "alt": "forMedia: Ticker and Flasher dashboard for AI-extracted headlines (placeholder)",
+        "caption": "Ticker and Flasher dashboard for AI-extracted headlines"
+      }
+    ],
     "liveUrl": null,
     "repoUrl": null
   },
@@ -124,7 +140,23 @@
         "why": "Unit tests and strict lint gates on every push"
       }
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "/images/projects/betanexus/01-detection-overlay.webp",
+        "alt": "BetaNexus: AI detection overlay on a live HLS feed (placeholder)",
+        "caption": "AI detection overlay on a live HLS feed"
+      },
+      {
+        "src": "/images/projects/betanexus/02-production-analytics.webp",
+        "alt": "BetaNexus: Production and downtime analytics (placeholder)",
+        "caption": "Production and downtime analytics"
+      },
+      {
+        "src": "/images/projects/betanexus/03-factory-map.webp",
+        "alt": "BetaNexus: Factory sites map for search and onboarding (placeholder)",
+        "caption": "Factory sites map for search and onboarding"
+      }
+    ],
     "liveUrl": null,
     "repoUrl": null
   },
@@ -144,7 +176,11 @@
       "Added PDF report export for attendance records."
     ],
     "techStack": [
-      { "name": "React", "group": "Frontend", "why": "Admin and employee dashboards" },
+      {
+        "name": "React",
+        "group": "Frontend",
+        "why": "Admin and employee dashboards"
+      },
       {
         "name": "GraphQL (Apollo Client)",
         "group": "Data",
@@ -156,7 +192,18 @@
         "why": "Separate admin and employee access"
       }
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "/images/projects/cico/01-qr-checkin.webp",
+        "alt": "CICO: QR-code check-in across branches (placeholder)",
+        "caption": "QR-code check-in across branches"
+      },
+      {
+        "src": "/images/projects/cico/02-admin-dashboard.webp",
+        "alt": "CICO: Admin dashboard with reports and PDF export (placeholder)",
+        "caption": "Admin dashboard with reports and PDF export"
+      }
+    ],
     "liveUrl": null,
     "repoUrl": null
   },
@@ -175,11 +222,34 @@
       "Managed dashboard state with Redux Toolkit and built the UI with Material UI."
     ],
     "techStack": [
-      { "name": "Redux Toolkit", "group": "Data", "why": "Centralized state for server status" },
-      { "name": "Material UI", "group": "Frontend", "why": "Consistent dashboard components" },
-      { "name": "Recharts", "group": "Data", "why": "Uptime and downtime charts" }
+      {
+        "name": "Redux Toolkit",
+        "group": "Data",
+        "why": "Centralized state for server status"
+      },
+      {
+        "name": "Material UI",
+        "group": "Frontend",
+        "why": "Consistent dashboard components"
+      },
+      {
+        "name": "Recharts",
+        "group": "Data",
+        "why": "Uptime and downtime charts"
+      }
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "/images/projects/server-monitoring-dashboard/01-status-overview.webp",
+        "alt": "Server Monitoring Dashboard: Server status overview (placeholder)",
+        "caption": "Server status overview"
+      },
+      {
+        "src": "/images/projects/server-monitoring-dashboard/02-uptime-charts.webp",
+        "alt": "Server Monitoring Dashboard: Uptime and downtime charts (placeholder)",
+        "caption": "Uptime and downtime charts"
+      }
+    ],
     "liveUrl": null,
     "repoUrl": null
   }

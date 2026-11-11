@@ -24,7 +24,7 @@ src/
 │   └── ui/              # Container, Section, SectionHeading, Badge, ButtonLink, LiveDot, ThemeToggle
 ├── data/                # ✏️ All content lives here (profile, skills, experience, projects)
 └── lib/                 # schemas.ts (Zod), data.ts (parsed content), navigation, theme, utils
-public/projects/<slug>/  # Project screenshots (.webp)
+public/images/projects/<slug>/  # Project screenshots (.webp)
 public/resume/           # CV PDF
 ```
 

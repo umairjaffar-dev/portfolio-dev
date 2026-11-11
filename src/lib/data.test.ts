@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import projectsJson from "@/data/projects.json";
 import { experience, profile, projects, skills } from "./data";
@@ -14,5 +16,12 @@ describe("content data", () => {
   it("rejects duplicate project slugs", () => {
     const dup = [...projectsJson, projectsJson[0]];
     expect(projectsSchema.safeParse(dup).success).toBe(false);
+  });
+
+  it("points every screenshot at a file that exists in public/", () => {
+    const missing = projects
+      .flatMap((p) => p.screenshots.map((s) => s.src))
+      .filter((src) => !existsSync(join(process.cwd(), "public", src)));
+    expect(missing).toEqual([]);
   });
 });
