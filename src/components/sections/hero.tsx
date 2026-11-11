@@ -3,11 +3,16 @@ import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { LiveDot } from "@/components/ui/live-dot";
 import { profile } from "@/lib/data";
+import { HeroBanner } from "./hero-banner";
 
 export function Hero() {
   return (
-    <section aria-labelledby="hero-title" className="py-24 sm:py-32">
-      <Container>
+    <section
+      aria-labelledby="hero-title"
+      className="relative isolate flex min-h-[calc(100dvh-4rem)] items-center overflow-hidden py-24 sm:py-32"
+    >
+      <HeroBanner />
+      <Container className="relative">
         {profile.availableForWork && (
           <Badge tone="live">
             <LiveDot />
