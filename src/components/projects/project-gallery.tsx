@@ -25,7 +25,7 @@ export function ProjectGallery({ project }: { project: Project }) {
   if (shots.length === 0) {
     return (
       <CameraFrame label={`cam_01 · ${project.slug}`} className="aspect-video">
-        <div className="text-muted flex h-full flex-col items-center justify-center gap-2">
+        <div className="flex h-full flex-col items-center justify-center gap-2 text-muted">
           <Images className="size-6" aria-hidden="true" />
           <p className="font-mono text-xs">screenshots coming soon</p>
         </div>
@@ -55,11 +55,11 @@ export function ProjectGallery({ project }: { project: Project }) {
 
       {shots.length > 1 && (
         <div className="mt-3 flex items-center justify-between gap-3">
-          <p className="text-muted truncate text-sm">
+          <p className="truncate text-sm text-muted">
             {shots[index]?.caption ?? shots[index]?.alt}
           </p>
           <div className="flex items-center gap-2">
-            <span className="text-muted font-mono text-xs">
+            <span className="font-mono text-xs text-muted">
               {index + 1}/{shots.length}
             </span>
             {[
@@ -72,8 +72,8 @@ export function ProjectGallery({ project }: { project: Project }) {
                 onClick={go}
                 aria-label={label}
                 className={cn(
-                  "border-border text-muted inline-flex size-8 items-center justify-center rounded-md border",
-                  "hover:bg-surface-2 hover:text-text focus-visible:outline-accent transition focus-visible:outline-2",
+                  "inline-flex size-8 items-center justify-center rounded-md border border-border text-muted",
+                  "transition hover:bg-surface-2 hover:text-text focus-visible:outline-2 focus-visible:outline-accent",
                 )}
               >
                 <Icon className="size-4" aria-hidden="true" />

@@ -17,8 +17,8 @@ export function Hero() {
         <h1 id="hero-title" className="mt-6 text-4xl font-semibold tracking-tight sm:text-6xl">
           {profile.name}
         </h1>
-        <p className="text-accent mt-3 font-mono text-sm sm:text-base">{profile.tagline}</p>
-        <p className="text-muted mt-6 max-w-2xl text-lg">{profile.summary}</p>
+        <p className="mt-3 font-mono text-sm text-accent sm:text-base">{profile.tagline}</p>
+        <p className="mt-6 max-w-2xl text-lg text-muted">{profile.summary}</p>
         <div className="mt-10 flex flex-wrap gap-3">
           <ButtonLink href="/#projects">View work</ButtonLink>
           <ButtonLink href="/#contact" variant="secondary">

@@ -9,8 +9,8 @@ async function CopyrightYear() {
 
 export function Footer() {
   return (
-    <footer className="border-border border-t py-8">
-      <Container className="text-muted flex flex-col items-center justify-between gap-3 font-mono text-xs sm:flex-row">
+    <footer className="border-t border-border py-8">
+      <Container className="flex flex-col items-center justify-between gap-3 font-mono text-xs text-muted sm:flex-row">
         <p>
           © <CopyrightYear /> {profile.name}
         </p>

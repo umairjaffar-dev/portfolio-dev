@@ -5,7 +5,7 @@ export function LiveDot({ className }: { className?: string }) {
   return (
     <span
       aria-hidden="true"
-      className={cn("animate-live-pulse bg-live inline-block size-2 rounded-full", className)}
+      className={cn("inline-block size-2 animate-live-pulse rounded-full bg-live", className)}
     />
   );
 }
