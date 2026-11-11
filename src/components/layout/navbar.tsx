@@ -4,10 +4,11 @@ import { LiveDot } from "@/components/ui/live-dot";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { profile } from "@/lib/data";
 import { sections } from "@/lib/navigation";
+import { MobileNav } from "./mobile-nav";
 
 export function Navbar() {
   return (
-    <header className="border-border bg-bg/80 sticky top-0 z-40 border-b backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-border bg-bg/80 backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-2 font-mono text-sm font-medium">
           <LiveDot />
@@ -15,10 +16,10 @@ export function Navbar() {
         </Link>
 
         <nav aria-label="Primary" className="hidden md:block">
-          <ul className="text-muted flex items-center gap-6 text-sm">
+          <ul className="flex items-center gap-6 text-sm text-muted">
             {sections.map((s) => (
               <li key={s.id}>
-                <a href={`/#${s.id}`} className="hover:text-text transition">
+                <a href={`/#${s.id}`} className="transition hover:text-text">
                   {s.label}
                 </a>
               </li>
@@ -26,7 +27,10 @@ export function Navbar() {
           </ul>
         </nav>
 
-        <ThemeToggle />
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <MobileNav />
+        </div>
       </Container>
     </header>
   );
