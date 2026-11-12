@@ -1,0 +1,95 @@
+[
+  {
+    "id": "discover",
+    "label": "Discover",
+    "title": "Requirement gathering",
+    "icon": "discover",
+    "description": "Understand the business problem, users and goals before writing any code.",
+    "tools": [
+      { "name": "Stakeholder calls", "icon": "team" },
+      { "name": "User stories", "icon": "notes" },
+      { "name": "Scope + priorities", "icon": "target" },
+      { "name": "Competitor research", "icon": "search" }
+    ]
+  },
+  {
+    "id": "plan",
+    "label": "Plan",
+    "title": "Planning + architecture",
+    "icon": "plan",
+    "description": "Choose the stack, design the system and break the work into milestones.",
+    "tools": [
+      { "name": "System design", "icon": "plan" },
+      { "name": "Database schema", "icon": "database" },
+      { "name": "Tech stack", "icon": "layers" },
+      { "name": "Milestones", "icon": "calendar" }
+    ]
+  },
+  {
+    "id": "design",
+    "label": "Design",
+    "title": "UI / UX design",
+    "icon": "palette",
+    "description": "Turn flows into wireframes and polished, accessible interfaces.",
+    "tools": [
+      { "name": "Figma", "icon": "figma" },
+      { "name": "Design system", "icon": "components" },
+      { "name": "Responsive", "icon": "responsive" },
+      { "name": "Accessibility", "icon": "a11y" }
+    ]
+  },
+  {
+    "id": "build",
+    "label": "Build",
+    "title": "Development",
+    "icon": "code",
+    "description": "Ship the frontend, backend and APIs in small, reviewable increments.",
+    "tools": [
+      { "name": "React", "icon": "react" },
+      { "name": "Next.js", "icon": "nextjs" },
+      { "name": "TypeScript", "icon": "typescript" },
+      { "name": "Node.js", "icon": "nodejs" },
+      { "name": "Django", "icon": "django" },
+      { "name": "Code reviews", "icon": "pull-request" }
+    ]
+  },
+  {
+    "id": "test",
+    "label": "Test",
+    "title": "Testing + QA",
+    "icon": "test",
+    "description": "Automated and manual testing so every release is stable and predictable.",
+    "tools": [
+      { "name": "Vitest", "icon": "vitest" },
+      { "name": "Testing Library", "icon": "testinglibrary" },
+      { "name": "E2E / UAT", "icon": "checklist" },
+      { "name": "Performance", "icon": "gauge" }
+    ]
+  },
+  {
+    "id": "deploy",
+    "label": "Deploy",
+    "title": "Deployment",
+    "icon": "rocket",
+    "description": "Automated pipelines push reliable releases to production.",
+    "tools": [
+      { "name": "GitHub Actions", "icon": "githubactions" },
+      { "name": "Vercel", "icon": "vercel" },
+      { "name": "AWS", "icon": "aws" },
+      { "name": "Monitoring", "icon": "activity" }
+    ]
+  },
+  {
+    "id": "scale",
+    "label": "Scale",
+    "title": "Maintain + scale",
+    "icon": "trending-up",
+    "description": "Measure, optimise and grow the system as your business grows.",
+    "tools": [
+      { "name": "Optimisation", "icon": "bolt" },
+      { "name": "Analytics", "icon": "chart-line" },
+      { "name": "New features", "icon": "sparkles" },
+      { "name": "5x–20x scaling", "icon": "trending-up" }
+    ]
+  }
+]

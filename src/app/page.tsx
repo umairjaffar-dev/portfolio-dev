@@ -4,6 +4,7 @@ import {
   Experience,
   Expertise,
   Hero,
+  Process,
   Projects,
   Skills,
 } from "@/components/sections";
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Expertise />
       <Skills />
+      <Process />
       <Experience />
       <Projects />
       <Contact />

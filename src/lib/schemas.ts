@@ -58,6 +58,20 @@ export const skillGroupSchema = z.object({
 });
 export const skillsSchema = z.array(skillGroupSchema);
 
+/* ---------- process.json ---------- */
+export const processStageSchema = z.object({
+  id: nonEmpty,
+  label: nonEmpty,
+  title: nonEmpty,
+  icon: skillIcon,
+  description: nonEmpty,
+  tools: z
+    .array(z.object({ name: nonEmpty, icon: skillIcon }))
+    .min(1)
+    .max(6),
+});
+export const processSchema = z.array(processStageSchema).min(1);
+
 /* ---------- experience.json ---------- */
 export const experienceSchema = z.array(
   z.object({
@@ -120,6 +134,7 @@ export const projectsSchema = z
 export type Profile = z.infer<typeof profileSchema>;
 export type ExpertiseItem = z.infer<typeof expertiseSchema>[number];
 export type SkillGroup = z.infer<typeof skillGroupSchema>;
+export type ProcessStage = z.infer<typeof processStageSchema>;
 export type Experience = z.infer<typeof experienceSchema>[number];
 export type Project = z.infer<typeof projectSchema>;
 export type TechItem = z.infer<typeof techItemSchema>;
