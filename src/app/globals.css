@@ -7,6 +7,7 @@
 :root,
 [data-theme="light"] {
   --bg: #f6f8fa;
+  --bg-alt: #eef2f6;
   --surface: #ffffff;
   --surface-2: #eef1f4;
   --border: #d8dee4;
@@ -21,6 +22,7 @@
 
 [data-theme="dark"] {
   --bg: #0b0f14;
+  --bg-alt: #0e141b;
   --surface: #11161d;
   --surface-2: #161c24;
   --border: #1f2630;
@@ -36,6 +38,7 @@
 /* Expose tokens as Tailwind utilities: bg-bg, bg-surface, text-muted, border-border, text-accent ... */
 @theme inline {
   --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
   --color-border: var(--border);
@@ -63,6 +66,7 @@
   --animate-xp-bar: xp-bar 3s ease-in-out infinite;
   --animate-xp-draw: xp-draw 3s ease-in-out infinite;
   --animate-xp-qr: xp-qr 1.8s ease-in-out infinite;
+  --animate-grid-flow: grid-flow 2.4s linear infinite;
   --animate-progress: progress var(--progress-duration, 4s) linear forwards;
 }
 
@@ -214,8 +218,15 @@
   }
 }
 
+@keyframes grid-flow {
+  to {
+    background-position: 0 56px;
+  }
+}
+
 @layer base {
-  html {
+  /* Native smooth scrolling only when Lenis isn't running (it adds .lenis to <html>). */
+  html:not(.lenis) {
     scroll-behavior: smooth;
   }
   body {

@@ -1,5 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+import { profile } from "@/lib/data";
 import { sections } from "@/lib/navigation";
 import { MobileNav } from "./mobile-nav";
 
@@ -11,7 +12,10 @@ describe("MobileNav", () => {
 
     fireEvent.click(toggle);
     const nav = screen.getByRole("navigation", { name: "Mobile" });
-    expect(nav.querySelectorAll("a")).toHaveLength(sections.length);
+    expect(nav.querySelectorAll('a[href^="/#"]')).toHaveLength(sections.length);
+    for (const social of profile.socials) {
+      expect(screen.getByRole("link", { name: social.label })).toHaveAttribute("href", social.href);
+    }
 
     fireEvent.click(screen.getByRole("link", { name: /projects/i }));
     expect(screen.queryByRole("navigation", { name: "Mobile" })).toBeNull();

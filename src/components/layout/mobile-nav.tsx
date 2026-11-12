@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { sections } from "@/lib/navigation";
+import { SocialLinks } from "@/components/ui/social-links";
 
 /** Hamburger menu for small screens. Closes on link click, Escape, or resize to desktop. */
 export function MobileNav() {
@@ -58,6 +59,9 @@ export function MobileNav() {
               </li>
             ))}
           </ul>
+          <div className="mx-auto max-w-6xl border-t border-border px-5 py-4 sm:px-8">
+            <SocialLinks />
+          </div>
         </nav>
       )}
     </div>
