@@ -13,7 +13,23 @@ export function SmoothScroll() {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    const lenis = new Lenis({ lerp: 0.1, wheelMultiplier: 1, smoothWheel: true });
+    const lenis = new Lenis({
+      lerp: 0.1,
+      wheelMultiplier: 1,
+      smoothWheel: true,
+      // Let nested scroll areas (modal body, dialogs) scroll natively.
+      prevent: (node) => node.closest("[data-lenis-prevent], [role='dialog']") !== null,
+    });
+
+    // Pause page scrolling while a modal has locked the body (Radix sets data-scroll-locked).
+    const lockObserver = new MutationObserver(() => {
+      if (document.body.hasAttribute("data-scroll-locked")) lenis.stop();
+      else lenis.start();
+    });
+    lockObserver.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["data-scroll-locked"],
+    });
     let frame = requestAnimationFrame(function raf(time) {
       lenis.raf(time);
       frame = requestAnimationFrame(raf);
@@ -37,6 +53,7 @@ export function SmoothScroll() {
 
     return () => {
       document.removeEventListener("click", onClick, true);
+      lockObserver.disconnect();
       cancelAnimationFrame(frame);
       lenis.destroy();
     };
