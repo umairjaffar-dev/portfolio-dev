@@ -1,8 +1,9 @@
 {
   "name": "Umair Jaffar",
   "title": "Full-Stack Developer",
-  "tagline": "fullstack · video streaming · ai surveillance",
-  "summary": "I build real-time video and AI-monitoring platforms with React and TypeScript, and extend them across the stack with Node.js and Django REST Framework.",
+  "tagline": "software solutions for growing businesses",
+  "keywords": ["web apps", "automation", "real-time systems", "ai solutions"],
+  "summary": "Software solutions provider turning everyday business problems into fast, battle-tested applications — resilient systems built to scale 5x–20x, paired with sleek, responsive interfaces your users will love.",
   "about": [
     "I'm a developer with 4 years of experience building real-time video and data-heavy products. I joined Betacodes as a Frontend Developer and was promoted to Senior within a year.",
     "Today I lead the frontend for two production platforms: an AI broadcast monitoring system tracking 50+ live TV channels for 80+ analysts, and a GovTech dashboard that overlays AI detections on live camera feeds across 48+ factory sites.",
