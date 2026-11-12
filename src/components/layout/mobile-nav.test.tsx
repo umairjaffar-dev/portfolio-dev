@@ -14,7 +14,15 @@ describe("MobileNav", () => {
     const nav = screen.getByRole("navigation", { name: "Mobile" });
     expect(nav.querySelectorAll('a[href^="/#"]')).toHaveLength(sections.length);
     for (const social of profile.socials) {
-      expect(screen.getByRole("link", { name: social.label })).toHaveAttribute("href", social.href);
+      if (social.href.startsWith("mailto:")) {
+        // Email opens an options menu (Gmail / Outlook / mail app / copy) instead of a bare mailto.
+        expect(screen.getByRole("button", { name: `${social.label} options` })).toBeInTheDocument();
+      } else {
+        expect(screen.getByRole("link", { name: social.label })).toHaveAttribute(
+          "href",
+          social.href,
+        );
+      }
     }
 
     fireEvent.click(screen.getByRole("link", { name: /projects/i }));
