@@ -23,7 +23,7 @@ export function Footer() {
           >
             <Logo name={profile.name} />
           </Link>
-          <SocialLinks />
+          <SocialLinks menuSide="top" />
         </div>
 
         <div className="flex flex-col items-center justify-between gap-3 border-t border-border pt-6 font-mono text-xs text-muted sm:flex-row">
