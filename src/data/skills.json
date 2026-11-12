@@ -1,63 +1,93 @@
 [
   {
-    "id": "languages",
-    "label": "Languages",
-    "items": ["TypeScript", "JavaScript (ES6+)", "Python", "HTML5", "CSS3"]
-  },
-  {
     "id": "frontend",
     "label": "Frontend",
+    "icon": "layers",
+    "highlight": false,
     "items": [
-      "React 19 (React Compiler)",
-      "Next.js",
-      "React Router",
-      "Vite",
-      "TanStack Query",
-      "Zustand",
-      "Redux Toolkit",
-      "Zod",
-      "Apollo Client (GraphQL)"
+      { "name": "React 19", "icon": "react" },
+      { "name": "Next.js", "icon": "nextjs" },
+      { "name": "TypeScript", "icon": "typescript" },
+      { "name": "JavaScript (ES6+)", "icon": "javascript" },
+      { "name": "React Router", "icon": "reactrouter" },
+      { "name": "Vite", "icon": "vite" },
+      { "name": "TanStack Query", "icon": "tanstack" },
+      { "name": "Redux Toolkit", "icon": "redux" },
+      { "name": "Zustand", "icon": "box" },
+      { "name": "Zod", "icon": "zod" },
+      { "name": "Apollo Client", "icon": "apollo" }
     ]
   },
   {
     "id": "backend",
-    "label": "Backend",
-    "items": ["Node.js", "Express.js", "Django", "Django REST Framework", "REST APIs", "GraphQL"]
-  },
-  {
-    "id": "video-viz",
-    "label": "Video & Data Visualization",
-    "items": ["HLS.js", "HTML Canvas", "D3.js", "ApexCharts", "Recharts"]
+    "label": "Backend + APIs",
+    "icon": "server",
+    "highlight": false,
+    "items": [
+      { "name": "Node.js", "icon": "nodejs" },
+      { "name": "Express.js", "icon": "express" },
+      { "name": "Python", "icon": "python" },
+      { "name": "Django", "icon": "django" },
+      { "name": "Django REST Framework", "icon": "django" },
+      { "name": "REST APIs", "icon": "plug" },
+      { "name": "GraphQL", "icon": "graphql" }
+    ]
   },
   {
     "id": "data-storage",
-    "label": "Databases & Storage",
-    "items": ["PostgreSQL", "MongoDB", "Cloudinary", "AWS S3"]
+    "label": "Data + Storage",
+    "icon": "database",
+    "highlight": false,
+    "items": [
+      { "name": "PostgreSQL", "icon": "postgresql" },
+      { "name": "MongoDB", "icon": "mongodb" },
+      { "name": "AWS S3", "icon": "aws" },
+      { "name": "Cloudinary", "icon": "cloudinary" }
+    ]
+  },
+  {
+    "id": "ai-video",
+    "label": "AI + Live Video",
+    "icon": "video",
+    "highlight": true,
+    "items": [
+      { "name": "HLS.js", "icon": "stream" },
+      { "name": "FFmpeg", "icon": "ffmpeg" },
+      { "name": "Computer vision overlays", "icon": "opencv" },
+      { "name": "HTML Canvas", "icon": "canvas" },
+      { "name": "D3.js", "icon": "d3" },
+      { "name": "ApexCharts", "icon": "chart-line" },
+      { "name": "Recharts", "icon": "chart-bar" }
+    ]
   },
   {
     "id": "ui",
-    "label": "UI & Styling",
+    "label": "UI + Design",
+    "icon": "palette",
+    "highlight": false,
     "items": [
-      "Tailwind CSS",
-      "Material UI",
-      "Responsive Design",
-      "WCAG Accessibility",
-      "Urdu/RTL Typography (Nastaliq)",
-      "Figma"
+      { "name": "Tailwind CSS", "icon": "tailwind" },
+      { "name": "Material UI", "icon": "mui" },
+      { "name": "Figma", "icon": "figma" },
+      { "name": "Responsive design", "icon": "responsive" },
+      { "name": "WCAG accessibility", "icon": "a11y" },
+      { "name": "Urdu / RTL (Nastaliq)", "icon": "languages" }
     ]
   },
   {
     "id": "quality-devops",
-    "label": "Testing, Performance & DevOps",
+    "label": "Quality + DevOps",
+    "icon": "shield",
+    "highlight": false,
     "items": [
-      "Vitest",
-      "React Testing Library",
-      "E2E / UAT",
-      "ESLint",
-      "Code Splitting & Lazy Loading",
-      "Git & GitHub",
-      "GitHub Actions (CI/CD)",
-      "Agile/Scrum"
+      { "name": "Vitest", "icon": "vitest" },
+      { "name": "React Testing Library", "icon": "testinglibrary" },
+      { "name": "E2E / UAT", "icon": "checklist" },
+      { "name": "ESLint", "icon": "eslint" },
+      { "name": "Code splitting + lazy loading", "icon": "bolt" },
+      { "name": "Git + GitHub", "icon": "git" },
+      { "name": "GitHub Actions (CI/CD)", "icon": "githubactions" },
+      { "name": "Agile / Scrum", "icon": "team" }
     ]
   }
 ]

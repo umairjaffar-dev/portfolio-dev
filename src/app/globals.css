@@ -52,6 +52,8 @@
   --animate-live-pulse: live-pulse 2s ease-in-out infinite;
   --animate-scan: scan 6s linear infinite;
   --animate-tile-scan: tile-scan 3.6s linear infinite;
+  --animate-fade-up: fade-up 0.4s ease-out both;
+  --animate-progress: progress var(--progress-duration, 4s) linear forwards;
 }
 
 @keyframes live-pulse {
@@ -89,6 +91,26 @@
   to {
     top: 100%;
     opacity: 0;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 
