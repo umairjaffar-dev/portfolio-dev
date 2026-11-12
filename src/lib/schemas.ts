@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { skillIconNames } from "./skill-icons";
 
 const nonEmpty = z.string().trim().min(1);
 const urlOrNull = z.url().nullable();
@@ -46,10 +47,14 @@ export const expertiseSchema = z.array(
 );
 
 /* ---------- skills.json ---------- */
+const skillIcon = z.enum(skillIconNames);
+
 export const skillGroupSchema = z.object({
   id: nonEmpty,
   label: nonEmpty,
-  items: z.array(nonEmpty).min(1),
+  icon: skillIcon,
+  highlight: z.boolean().default(false),
+  items: z.array(z.object({ name: nonEmpty, icon: skillIcon })).min(1),
 });
 export const skillsSchema = z.array(skillGroupSchema);
 
