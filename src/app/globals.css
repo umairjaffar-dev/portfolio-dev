@@ -62,6 +62,7 @@
   --animate-xp-flow: xp-flow 0.8s linear infinite;
   --animate-xp-bar: xp-bar 3s ease-in-out infinite;
   --animate-xp-draw: xp-draw 3s ease-in-out infinite;
+  --animate-xp-qr: xp-qr 1.8s ease-in-out infinite;
   --animate-progress: progress var(--progress-duration, 4s) linear forwards;
 }
 
@@ -200,6 +201,16 @@
   60%,
   100% {
     stroke-dashoffset: 0;
+  }
+}
+
+@keyframes xp-qr {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--xp-qr, 40px));
   }
 }
 
