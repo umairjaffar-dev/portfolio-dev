@@ -131,6 +131,13 @@ export const projectSchema = z.object({
   period: nonEmpty,
   scope: nonEmpty,
   role: nonEmpty,
+  /** Animated mini-UI shown in the case-study row (works without screenshots). */
+  preview: z.enum(["broadcast", "detection", "attendance", "uptime"]),
+  /** Headline numbers; only real, defensible figures. */
+  metrics: z
+    .array(z.object({ value: nonEmpty, label: nonEmpty }))
+    .max(3)
+    .default([]),
   achievements: z.array(nonEmpty).min(1),
   techStack: z.array(techItemSchema).min(1),
   screenshots: z.array(screenshotSchema),

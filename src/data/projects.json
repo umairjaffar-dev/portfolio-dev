@@ -9,6 +9,21 @@
     "period": "Betacodes · Dec 2023 – present",
     "scope": "A production platform that monitors 50+ live TV channels for 80+ analysts. It combines live and archived video, bilingual transcription, and AI (LLM/OCR) extraction so analysts can find, clip, and share what aired.",
     "role": "Frontend lead: owned architecture, code reviews, and delivery, mentored junior developers, and designed Django REST Framework endpoints for internal tools.",
+    "preview": "broadcast",
+    "metrics": [
+      {
+        "value": "50+",
+        "label": "Live TV channels"
+      },
+      {
+        "value": "80+",
+        "label": "Analysts"
+      },
+      {
+        "value": "180-day",
+        "label": "Video archive"
+      }
+    ],
     "achievements": [
       "Built the live TV module on HLS.js with custom controls, in-browser clipping with metadata tagging, and DVR-style playback across a 180-day archive.",
       "Architected the real-time data layer with Zustand and TanStack Query to stream LLM outputs and transcription updates while keeping the UI responsive.",
@@ -84,6 +99,17 @@
     "period": "Betacodes · built from inception",
     "scope": "An industrial production monitoring platform for the Federal Board of Revenue (FBR). It overlays AI detections on live camera feeds and gives auditors production analytics across 48+ factory sites, designed to scale to 400+.",
     "role": "Frontend lead from inception: architecture, data layer, and video overlay pipeline, plus contract-first API design for the Network Monitoring (NMS) module.",
+    "preview": "detection",
+    "metrics": [
+      {
+        "value": "48+",
+        "label": "Factory sites"
+      },
+      {
+        "value": "MPEG-TS",
+        "label": "In-browser parser"
+      }
+    ],
     "achievements": [
       "Built an in-browser MPEG-TS parser (PES reassembly, ID3/TXXX extraction) that reads AI detection metadata from live HLS streams and draws bounding boxes, unit counts, and timestamps on a playback-synced Canvas overlay.",
       "Built ApexCharts dashboards (heatmaps, line/bar charts, zoom, log scale) for SKU, production, mill-wise output, and downtime analytics across 48+ factory sites.",
@@ -170,6 +196,8 @@
     "period": "PkTeam · Oct 2022 – Nov 2023",
     "scope": "An employee attendance system used across multiple branches of Islamabad Diagnostic Centre, with QR-code check-in and check-out and exportable reports.",
     "role": "Frontend developer in an Agile/Scrum team.",
+    "preview": "attendance",
+    "metrics": [],
     "achievements": [
       "Built QR-code check-in/check-out on a GraphQL (Apollo Client) data layer.",
       "Implemented role-based access with protected routes and separate admin and employee dashboards.",
@@ -217,6 +245,8 @@
     "period": "PkTeam · Oct 2022 – Nov 2023",
     "scope": "A dashboard that shows server uptime and downtime status at a glance.",
     "role": "Frontend developer.",
+    "preview": "uptime",
+    "metrics": [],
     "achievements": [
       "Built status views and uptime charts with Recharts.",
       "Managed dashboard state with Redux Toolkit and built the UI with Material UI."
