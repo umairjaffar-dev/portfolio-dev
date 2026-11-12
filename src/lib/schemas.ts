@@ -18,9 +18,20 @@ export const profileSchema = z.object({
   summary: nonEmpty,
   about: z.array(nonEmpty).min(1),
   location: nonEmpty,
+  clientReach: nonEmpty.optional(),
   availableForWork: z.boolean(),
   resumeUrl: z.string().startsWith("/").nullable(),
   stats: z.array(z.object({ value: nonEmpty, label: nonEmpty })).max(4),
+  stackGrid: z
+    .array(
+      z.object({
+        channel: nonEmpty,
+        title: nonEmpty,
+        tech: z.array(nonEmpty).min(1).max(3),
+        highlight: z.boolean(),
+      }),
+    )
+    .max(6),
   socials: z.array(socialSchema),
 });
 

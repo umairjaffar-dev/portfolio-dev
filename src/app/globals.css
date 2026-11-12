@@ -51,6 +51,7 @@
 
   --animate-live-pulse: live-pulse 2s ease-in-out infinite;
   --animate-scan: scan 6s linear infinite;
+  --animate-tile-scan: tile-scan 3.6s linear infinite;
 }
 
 @keyframes live-pulse {
@@ -70,6 +71,24 @@
   }
   to {
     transform: translateY(478px);
+  }
+}
+
+/* Sweeps a scan line down its positioned parent (About monitor grid). */
+@keyframes tile-scan {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
   }
 }
 
