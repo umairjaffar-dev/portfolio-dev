@@ -5,18 +5,58 @@
   "keywords": ["web apps", "automation", "real-time systems", "ai solutions"],
   "summary": "Software solutions provider turning everyday business problems into fast, battle-tested applications — resilient systems built to scale 5x–20x, paired with sleek, responsive interfaces your users will love.",
   "about": [
-    "I'm a developer with 4 years of experience building real-time video and data-heavy products. I joined Betacodes as a Frontend Developer and was promoted to Senior within a year.",
-    "Today I lead the frontend for two production platforms: an AI broadcast monitoring system tracking 50+ live TV channels for 80+ analysts, and a GovTech dashboard that overlays AI detections on live camera feeds across 48+ factory sites.",
-    "I'm expanding into full-stack work with Node.js, Express, and Django REST Framework, and going deeper into AI for video and surveillance."
+    "I'm a full-stack developer with 5+ years of experience turning business problems into reliable, scalable software. From the first idea to production, I design the architecture, build the backend and APIs, and craft fast, responsive interfaces that people actually enjoy using.",
+    "I've worked on 30+ platforms, including AI-driven products, real-time monitoring systems and international business apps. That includes an AI broadcast monitoring system tracking 50+ live TV channels with HLS streaming, video clipping and English & Urdu speech-to-text, and a GovTech dashboard that overlays computer-vision detections on live camera feeds across 48+ factory sites.",
+    "My stack spans React, Next.js and TypeScript on the frontend, Node.js, Express, Python and Django on the backend, and MongoDB and PostgreSQL for data, connected through REST and GraphQL APIs. On the video and AI side, I build live video processing and monitoring systems with HLS streaming, real-time AI detection overlays and computer-vision-powered surveillance dashboards.",
+    "I care about clean architecture, performance, testing and code that's easy to maintain long after launch. Whether you need a new product built from scratch, an existing system scaled, or a slow workflow automated, I'll help you ship it right. Let's build something that grows with your business."
   ],
   "location": "Islamabad, Pakistan",
+  "clientReach": "working with clients worldwide",
   "availableForWork": true,
   "resumeUrl": null,
   "stats": [
-    { "value": "4+", "label": "Years experience" },
-    { "value": "50+", "label": "Live TV channels monitored" },
-    { "value": "48+", "label": "Factory sites (FBR)" },
-    { "value": "80+", "label": "Analysts on forMedia" }
+    {
+      "value": "5+",
+      "label": "Years experience"
+    },
+    {
+      "value": "30+",
+      "label": "Platforms delivered"
+    },
+    {
+      "value": "50+",
+      "label": "Live channels streamed"
+    },
+    {
+      "value": "48+",
+      "label": "Sites monitored in real time"
+    }
+  ],
+  "stackGrid": [
+    {
+      "channel": "fe-01",
+      "title": "Frontend",
+      "tech": ["React · Next.js", "TypeScript · Tailwind"],
+      "highlight": false
+    },
+    {
+      "channel": "be-02",
+      "title": "Backend",
+      "tech": ["Node.js · Express", "Python · Django"],
+      "highlight": false
+    },
+    {
+      "channel": "db-03",
+      "title": "Data + APIs",
+      "tech": ["MongoDB · PostgreSQL", "REST · GraphQL"],
+      "highlight": false
+    },
+    {
+      "channel": "ai-04",
+      "title": "AI + live video",
+      "tech": ["HLS · FFmpeg", "CV · real-time"],
+      "highlight": true
+    }
   ],
   "socials": [
     {
@@ -24,7 +64,15 @@
       "href": "https://www.linkedin.com/in/umairjaffar-dev/",
       "icon": "linkedin"
     },
-    { "label": "GitHub", "href": "https://github.com/umairjaffar-dev", "icon": "github" },
-    { "label": "Email", "href": "mailto:umairjaffar.dev@gmail.com", "icon": "mail" }
+    {
+      "label": "GitHub",
+      "href": "https://github.com/umairjaffar-dev",
+      "icon": "github"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:umairjaffar.dev@gmail.com",
+      "icon": "mail"
+    }
   ]
 }
