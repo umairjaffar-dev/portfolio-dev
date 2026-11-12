@@ -14,6 +14,7 @@ export const profileSchema = z.object({
   name: nonEmpty,
   title: nonEmpty,
   tagline: nonEmpty,
+  keywords: z.array(nonEmpty).min(1),
   summary: nonEmpty,
   about: z.array(nonEmpty).min(1),
   location: nonEmpty,
