@@ -5,13 +5,16 @@ import { Container } from "@/components/ui/container";
 import { LiveDot } from "@/components/ui/live-dot";
 import { profile } from "@/lib/data";
 import { HeroBanner } from "./hero-banner";
+import { HeroGrid } from "./hero-grid";
 
 export function Hero() {
   return (
     <section
+      id="top"
       aria-labelledby="hero-title"
       className="relative isolate flex min-h-[calc(100dvh-4rem)] items-center overflow-hidden py-24 sm:py-32"
     >
+      <HeroGrid />
       <HeroBanner />
       <Container className="relative">
         {profile.availableForWork && (
