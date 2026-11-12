@@ -88,7 +88,12 @@ export const experienceSchema = z.array(
     location: nonEmpty,
     start: nonEmpty,
     end: z.string().nullable(),
-    highlights: z.array(nonEmpty),
+    /** Headline numbers shown as KPI tiles; count up when scrolled into view. */
+    metrics: z
+      .array(z.object({ value: nonEmpty, label: nonEmpty }))
+      .max(4)
+      .default([]),
+    highlights: z.array(z.object({ text: nonEmpty, icon: skillIcon })).min(1),
     stack: z.array(nonEmpty),
   }),
 );
