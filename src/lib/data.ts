@@ -1,11 +1,13 @@
 import profileJson from "@/data/profile.json";
 import expertiseJson from "@/data/expertise.json";
 import skillsJson from "@/data/skills.json";
+import processJson from "@/data/process.json";
 import experienceJson from "@/data/experience.json";
 import projectsJson from "@/data/projects.json";
 import {
   experienceSchema,
   expertiseSchema,
+  processSchema,
   profileSchema,
   projectsSchema,
   skillsSchema,
@@ -18,6 +20,7 @@ import {
 export const profile = profileSchema.parse(profileJson);
 export const expertise = expertiseSchema.parse(expertiseJson);
 export const skills = skillsSchema.parse(skillsJson);
+export const processStages = processSchema.parse(processJson);
 export const experience = experienceSchema.parse(experienceJson);
 export const projects = projectsSchema.parse(projectsJson);
 
