@@ -37,14 +37,22 @@ export const profileSchema = z.object({
 });
 
 /* ---------- expertise.json ---------- */
-export const expertiseSchema = z.array(
-  z.object({
-    title: nonEmpty,
-    description: nonEmpty,
-    icon: z.enum(["video", "cctv", "layers", "chart"]),
-    tags: z.array(nonEmpty).max(4),
-  }),
-);
+export const expertiseSchema = z
+  .array(
+    z.object({
+      title: nonEmpty,
+      description: nonEmpty,
+      icon: z.enum(["video", "cctv", "layers", "chart"]),
+      /** Which animated diagram illustrates how the feature works. */
+      visual: z.enum(["stream", "detection", "fullstack", "dataviz"]),
+      /** Bento placement: one big feature tile, regular tiles, full-width rows. */
+      layout: z.enum(["feature", "tile", "wide"]).default("tile"),
+      tags: z.array(nonEmpty).max(4),
+    }),
+  )
+  .refine((items) => items.filter((i) => i.layout === "feature").length <= 1, {
+    message: "Only one expertise item can use the feature layout",
+  });
 
 /* ---------- skills.json ---------- */
 const skillIcon = z.enum(skillIconNames);

@@ -53,6 +53,15 @@
   --animate-scan: scan 6s linear infinite;
   --animate-tile-scan: tile-scan 3.6s linear infinite;
   --animate-fade-up: fade-up 0.4s ease-out both;
+  --animate-xp-segment: xp-segment 3s steps(1) infinite;
+  --animate-xp-playhead: xp-playhead 6s linear infinite;
+  --animate-xp-detect: xp-detect 3s ease-in-out infinite;
+  --animate-xp-scan: xp-scan 2.6s linear infinite;
+  --animate-xp-type: xp-type 3s ease-in-out infinite;
+  --animate-xp-packet: xp-packet 1.8s linear infinite;
+  --animate-xp-flow: xp-flow 0.8s linear infinite;
+  --animate-xp-bar: xp-bar 3s ease-in-out infinite;
+  --animate-xp-draw: xp-draw 3s ease-in-out infinite;
   --animate-progress: progress var(--progress-duration, 4s) linear forwards;
 }
 
@@ -111,6 +120,86 @@
   }
   to {
     transform: scaleX(1);
+  }
+}
+
+/* ---------- Expertise visuals (SVG user units) ---------- */
+@keyframes xp-segment {
+  0% {
+    fill: var(--border);
+  }
+  20%,
+  100% {
+    fill: var(--accent);
+  }
+}
+@keyframes xp-playhead {
+  to {
+    transform: translateX(220px);
+  }
+}
+@keyframes xp-detect {
+  0%,
+  15% {
+    opacity: 0;
+  }
+  30%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes xp-scan {
+  to {
+    transform: translateY(var(--xp-scan, 80px));
+  }
+}
+@keyframes xp-type {
+  0% {
+    transform: scaleX(0);
+  }
+  50%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes xp-packet {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  15%,
+  85% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(var(--xp-dx, 26px));
+    opacity: 0;
+  }
+}
+@keyframes xp-flow {
+  to {
+    stroke-dashoffset: -18;
+  }
+}
+@keyframes xp-bar {
+  0%,
+  100% {
+    transform: scaleY(0.15);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+@keyframes xp-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  60%,
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 

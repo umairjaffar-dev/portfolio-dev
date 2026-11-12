@@ -1,26 +1,34 @@
 [
   {
-    "title": "Real-time video streaming",
-    "description": "Live and archived HLS playback with custom controls, in-browser clipping, and DVR-style seeking.",
-    "icon": "video",
-    "tags": ["HLS.js", "MPEG-TS", "HTML Canvas"]
-  },
-  {
     "title": "AI surveillance dashboards",
     "description": "Interfaces that overlay AI detections on live camera feeds and turn LLM/OCR output into analyst workflows.",
     "icon": "cctv",
-    "tags": ["React", "HTML Canvas", "TanStack Query"]
+    "tags": ["React", "HTML Canvas", "TanStack Query"],
+    "visual": "detection",
+    "layout": "feature"
   },
   {
-    "title": "Full-stack web apps",
-    "description": "Typed apps with REST and GraphQL APIs, 2FA auth flows, and Node.js or Django REST backends.",
-    "icon": "layers",
-    "tags": ["Next.js", "Node.js", "Django REST"]
+    "title": "Real-time video streaming",
+    "description": "Live and archived HLS playback with custom controls, in-browser clipping, and DVR-style seeking.",
+    "icon": "video",
+    "tags": ["HLS.js", "MPEG-TS", "HTML Canvas"],
+    "visual": "stream",
+    "layout": "tile"
   },
   {
     "title": "Data visualization",
     "description": "Dense, readable charts and dashboards for operational and government-scale data.",
     "icon": "chart",
-    "tags": ["D3.js", "ApexCharts", "Recharts"]
+    "tags": ["D3.js", "ApexCharts", "Recharts"],
+    "visual": "dataviz",
+    "layout": "tile"
+  },
+  {
+    "title": "Full-stack web apps",
+    "description": "Typed apps with REST and GraphQL APIs, 2FA auth flows, and Node.js or Django REST backends.",
+    "icon": "layers",
+    "tags": ["Next.js", "Node.js", "Django REST"],
+    "visual": "fullstack",
+    "layout": "wide"
   }
 ]

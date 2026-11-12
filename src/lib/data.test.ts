@@ -1,9 +1,10 @@
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
+import expertiseJson from "@/data/expertise.json";
 import projectsJson from "@/data/projects.json";
 import { experience, processStages, profile, projects, skills } from "./data";
-import { projectsSchema } from "./schemas";
+import { expertiseSchema, projectsSchema } from "./schemas";
 
 describe("content data", () => {
   it("parses every JSON file against its schema", () => {
@@ -17,6 +18,11 @@ describe("content data", () => {
   it("rejects duplicate project slugs", () => {
     const dup = [...projectsJson, projectsJson[0]];
     expect(projectsSchema.safeParse(dup).success).toBe(false);
+  });
+
+  it("allows only one featured expertise tile", () => {
+    const twoFeatures = expertiseJson.map((e) => ({ ...e, layout: "feature" }));
+    expect(expertiseSchema.safeParse(twoFeatures).success).toBe(false);
   });
 
   it("points every screenshot at a file that exists in public/", () => {
