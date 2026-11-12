@@ -5,11 +5,49 @@
     "location": "Islamabad, Pakistan",
     "start": "Dec 2023",
     "end": null,
+    "metrics": [
+      {
+        "value": "50+",
+        "label": "Live TV channels"
+      },
+      {
+        "value": "80+",
+        "label": "Analysts served"
+      },
+      {
+        "value": "48+",
+        "label": "Factory sites"
+      },
+      {
+        "value": "<1 yr",
+        "label": "Promoted to senior"
+      }
+    ],
     "highlights": [
-      "Joined as Frontend Developer and promoted to Senior within a year (Dec 2024).",
-      "Lead frontend development for two production platforms: forMedia (AI broadcast monitoring) and BetaNexus (GovTech production monitoring).",
-      "Own frontend architecture, code reviews, and delivery, and mentor junior developers.",
-      "Designed Django REST Framework endpoints for internal tools and led contract-first API design for the BetaNexus network monitoring module."
+      {
+        "icon": "trending-up",
+        "text": "Joined as Frontend Developer and promoted to Senior within a year (Dec 2024)."
+      },
+      {
+        "icon": "stream",
+        "text": "Lead frontend for forMedia, an AI broadcast monitoring platform tracking 50+ live TV channels for 80+ analysts, with HLS live and archive playback, in-browser clipping and English and Urdu speech-to-text."
+      },
+      {
+        "icon": "cctv",
+        "text": "Lead frontend for BetaNexus, a GovTech production monitoring system for Pakistan's FBR that overlays AI detections on live camera feeds across 48+ factory sites, with maps, heatmaps and infinite-scroll tables."
+      },
+      {
+        "icon": "components",
+        "text": "Built a reusable component system: URL-synced, timezone-safe date ranges, multi-select filters and dynamic multi-camera forms, all with full dark and light theming."
+      },
+      {
+        "icon": "plug",
+        "text": "Designed Django REST Framework endpoints for internal tools and led contract-first API design for the BetaNexus network monitoring module."
+      },
+      {
+        "icon": "team",
+        "text": "Own frontend architecture, code reviews, TypeScript strict-mode quality and delivery, and mentor junior developers."
+      }
     ],
     "stack": [
       "React 19",
@@ -21,7 +59,8 @@
       "Zod",
       "Tailwind CSS",
       "ApexCharts",
-      "Django REST Framework"
+      "Django REST Framework",
+      "React Leaflet"
     ]
   },
   {
@@ -30,11 +69,24 @@
     "location": "Rawalpindi, Pakistan",
     "start": "Oct 2022",
     "end": "Nov 2023",
+    "metrics": [],
     "highlights": [
-      "Built CICO, a multi-branch QR-code attendance system for Islamabad Diagnostic Centre, on a GraphQL (Apollo Client) data layer.",
-      "Implemented role-based access with protected routes and separate admin and employee dashboards.",
-      "Built a server monitoring dashboard for uptime and downtime status with Redux Toolkit, Material UI, and Recharts.",
-      "Delivered features in an Agile/Scrum team."
+      {
+        "icon": "qrcode",
+        "text": "Built CICO, a multi-branch QR-code attendance system for Islamabad Diagnostic Centre, on a GraphQL (Apollo Client) data layer."
+      },
+      {
+        "icon": "shield-user",
+        "text": "Implemented role-based access with protected routes and separate admin and employee dashboards."
+      },
+      {
+        "icon": "server-cog",
+        "text": "Built a server monitoring dashboard for uptime and downtime status with Redux Toolkit, Material UI, and Recharts."
+      },
+      {
+        "icon": "team",
+        "text": "Delivered features in an Agile/Scrum team."
+      }
     ],
     "stack": ["React", "GraphQL", "Apollo Client", "Redux Toolkit", "Material UI", "Recharts"]
   },
@@ -44,8 +96,16 @@
     "location": "Islamabad, Pakistan",
     "start": "Apr 2022",
     "end": "Sep 2022",
+    "metrics": [],
     "highlights": [
-      "Built e-commerce and blog websites in React with REST API integration, responsive Bootstrap layouts, and custom form validation."
+      {
+        "icon": "cart",
+        "text": "Built e-commerce and blog websites in React with REST API integration."
+      },
+      {
+        "icon": "forms",
+        "text": "Delivered responsive Bootstrap layouts and custom form validation."
+      }
     ],
     "stack": ["React", "REST APIs", "Bootstrap"]
   }

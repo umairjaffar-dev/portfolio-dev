@@ -1,5 +1,11 @@
 import {
   Accessibility,
+  Cctv,
+  ClipboardCheck,
+  QrCode,
+  ServerCog,
+  ShieldUser,
+  ShoppingCart,
   Activity,
   CalendarRange,
   Code,
@@ -147,6 +153,13 @@ export const skillIcons = {
   sparkles: Sparkles,
   github: SiGithub,
   vercel: SiVercel,
+  // experience highlights
+  cctv: Cctv,
+  qrcode: QrCode,
+  "shield-user": ShieldUser,
+  "server-cog": ServerCog,
+  cart: ShoppingCart,
+  forms: ClipboardCheck,
 } satisfies Record<string, IconComponent>;
 
 export type SkillIconName = keyof typeof skillIcons;
